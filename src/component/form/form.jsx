@@ -30,11 +30,11 @@ const FormReg = () => {
        if(pageState){
         return(
           <div className='summery-box'>
-          <div className="login-popup-title">
+          <div className="title">
                 <h2>Summary </h2>
                 
             </div>
-            <div className="login-popup-input">
+            <div className="popup-input">
                 <div  className='summery'><span>Name :</span> {data.name}</div>
                 <div className='summery'><span>Email :</span> {data.email}</div>
                 <div className='summery'><span>Age :</span> {data.age}</div>
@@ -52,14 +52,14 @@ const FormReg = () => {
   
   return (
     
-        <div className='login-popup'>
-        {<form action=""onSubmit={onsubmit} className="login-popup-container">
+        <div className='form'>
+        {<form action=""onSubmit={onsubmit} className="container">
 
-            <div className="login-popup-title">
+            <div className="title">
                 <h2>Registration </h2>
                 
             </div>
-            <div className="login-popup-input">
+            <div className="popup-input">
                 <input type="text" placeholder='Name' name='name'  value={data.name} onChange={onChangeHandler} required />
                 
                 <input type="email" placeholder='emali' name='email' value={data.email} onChange={onChangeHandler} required />
@@ -67,7 +67,7 @@ const FormReg = () => {
                 {currentState==="normal"?<></>:<input type="text" placeholder='Guest Name' name='guest'value={data.guest} onChange={onChangeHandler}  required />}
             </div>
             <button type='submit'>submit</button>
-             <div className="login-popup-condition">
+             <div className="popup-condition">
                 <input type="checkbox" onClick={()=>currentState==="normal"?setCurrentState("guest"):setCurrentState("normal")} />
                 <p className='para'>Are you attending with a guest?</p>
              </div>

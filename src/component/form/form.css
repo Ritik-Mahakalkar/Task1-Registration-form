@@ -1,9 +1,9 @@
 
-.login-popup{
+.form{
     position: flex;
     
 }
-.login-popup-container{
+.container{
     place-self: center;
     width: max(23vw,330px);
     color: #808080;
@@ -17,30 +17,27 @@
     animation: fadeIn 0.5s;
     border: 1px solid black;
 }
-.login-popup-title{
+.title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
 }
-.login-popup-title img{
-    width: 16px;
-    cursor: pointer;
-}
-.login-popup-input{
+
+.popup-input{
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 }
-.login-popup-input input{
+.popup-input input{
     outline: none;
     border: 1px solid black ;
     padding: 10px;
     border-radius: 4px;
     font-size: 16px;
 }
-.login-popup-container button{
+.container button{
     border: none;
     padding: 10px;
     border-radius: 4px;
@@ -49,19 +46,19 @@
     font-size: 15px;
     cursor: pointer;
 }
-.login-popup-container button:hover{
+.container button:hover{
     color: tomato;
     background-color: white;
     border: 1px solid tomato;
 }
-.login-popup-condition{
+.popup-condition{
     display: flex;
     align-items: start;
     gap: 8px;
     
     
 }
-.login-popup-condition input{
+.popup-condition input{
     margin-top:20px ;
 }
 .login-popup p span{
